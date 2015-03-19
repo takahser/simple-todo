@@ -6,10 +6,16 @@
 <body>
   <div class="container">
     <header>
-      <h1>Todo List</h1>
+      <h1>Todo List ({{incompleteCount}})</h1>
     </header>
+	
+	<!-- filter complete/incomplete tasks -->
+	<label class="hide-completed">
+	  <input type="checkbox" checked="{{hideCompleted}}" />
+	  Hide Completed Tasks
+	</label>
 
-    <!-- add a form below the h1 -->
+    <!-- add new tasks form -->
 	<form class="new-task">
 		<input type="text" name="text" placeholder="Type to add new tasks" />
 	</form>
